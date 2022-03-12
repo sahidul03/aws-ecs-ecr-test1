@@ -4,7 +4,7 @@ variable "region" {
   description = "AWS region"
 }
 variable "env" {
-  description = "Targeted Depolyment environment"
+  description = "Targeted Deployment environment"
   default     = "dev"
 }
 variable "photo_desk_project_repository_name" {

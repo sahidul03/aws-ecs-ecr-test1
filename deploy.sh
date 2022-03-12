@@ -1,7 +1,7 @@
 #!/bin/sh
 
 REGION="ap-northeast-1"
-AWS_ACCOUNT_ID="xxxxxxx"
+AWS_ACCOUNT_ID="xxxxxx"
 PROFILE="sahidboss"
 SERVICE_NAME="ecs-ecr-test1-repo"
 SERVICE_TAG="latest"

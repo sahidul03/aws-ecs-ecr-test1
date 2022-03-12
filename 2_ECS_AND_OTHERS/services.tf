@@ -13,7 +13,7 @@ resource "aws_ecs_service" "ecs_ecr_test1_service" {
 
   network_configuration {
     subnets          = [aws_subnet.private_subnet_1.id, aws_subnet.private_subnet_2.id]
-    assign_public_ip = true # Providing our containers with public IPs
+    assign_public_ip = true # Providing our containers with public IPs [improve]
     security_groups  = [aws_security_group.ecs_ecr_test1_service_sg.id]
   }
 }

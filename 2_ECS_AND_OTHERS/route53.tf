@@ -4,7 +4,7 @@ data "aws_route53_zone" "ecr_ecs_test1" {
 
 resource "aws_route53_record" "ecr_ecs_test1_demo" {
   zone_id = data.aws_route53_zone.ecr_ecs_test1.zone_id
-  name    = join(".", ["photo-desk", data.aws_route53_zone.ecr_ecs_test1.name])
+  name    = join(".", ["demo", data.aws_route53_zone.ecr_ecs_test1.name])
   type    = "A"
   alias {
     name                   = aws_lb.ecs_ecr_test1_lb.dns_name
